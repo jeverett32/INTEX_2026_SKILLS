@@ -1,34 +1,46 @@
-## INTEX Web App Workflow: Integrated Development & CRISP-DM
-
----
+## **=INTEX Web App Workflow**
 
 ### **1. Core Methodology: CRISP-DM & Research**
 * **Skill:** `/crisp-dm-pipeline` + `/researcher`
-* **Execution:** * Initiate **Business Understanding** to define objectives and success criteria.
-    * Perform **Data Understanding** and **Preparation** to clean and transform datasets.
-    * **Iterative Modeling:** Use the `/researcher` skill during the **Modeling** and **Evaluation** phases to experiment with hyperparameters and optimize model performance.
+* **Plugin:** `data`
+* **Execution:** * Initiate **Business Understanding** to define objectives.
+    * Perform **Data Understanding** and **Preparation**.
+    * **Iterative Modeling:** Use `/researcher` during **Modeling** and **Evaluation** to optimize performance.
+* **Installation:**
+    * `npx claudepluginhub anthropics/knowledge-work-plugins --plugin data`
 
 ### **2. Technical Implementation: Full-Stack Development**
 * **Skill:** `/full-stack-react-dotnet`
-* **Execution:** * Generate the backend infrastructure using **.NET**.
-    * Develop the interactive user interface with **React**.
-    * Integrate the optimized model from the CRISP-DM pipeline into the application logic.
+* **Plugin:** `cybersecurity-skills` + `data`
+* **Execution:** * Generate **.NET** backend infrastructure.
+    * Develop **React** frontend UI.
+    * Integrate optimized models into the application logic.
+* **Installation:**
+    * `npx claudepluginhub mukul975/anthropic-cybersecurity-skills --plugin cybersecurity-skills`
+    * `npx claudepluginhub anthropics/knowledge-work-plugins --plugin data`
 
 ### **3. Design & Quality Assurance**
 * **Skill:** `/frontend-design` + `/webapp-testing`
-* **Execution:** * Apply UI/UX principles to ensure a professional and intuitive user experience.
-    * Run continuous **Testing** suites to debug the frontend, API endpoints, and model integration.
-
-### **5. Deployment**
-* **Plugin:** `vercel-plugin` + `supabase-plugin`
+* **Plugin:** `data` + `ui-ux-pro-max`
+* **Execution:** * Apply UI/UX principles for intuitive user experience.
+    * Run continuous **Testing** suites for API endpoints and model integration.
 * **Installation:**
-     * **Vercel:** `claude plugin install vercel@claude-plugins-official`
-     * **Supabase:** `claude plugin install supabase@claude-plugins-official`
+    * `npx claudepluginhub nextlevelbuilder/ui-ux-pro-max-skill --plugin ui-ux-pro-max`
+    * `claude plugin install frontend-design@claude-plugins-official`
+
+### **4. Deployment**
+* **Plugin:** `vercel-plugin` + `supabase-plugin`
+* **Execution:** Deploy the frontend to Vercel and manage the database/auth via Supabase.
+* **Installation:**
+    * `claude plugin install vercel@claude-plugins-official`
+    * `claude plugin install supabase@claude-plugins-official`
 
 ### **5. Stakeholder Delivery**
 * **Skill:** `Pptx-plugin`
-* **Execution:** * Generate a final presentation summarizing findings from the CRISP-DM process.
-    * Demonstrate the web app solution and how it addresses the initial business problem.
+* **Execution:** * Generate a final presentation summarizing CRISP-DM findings.
+    * Demonstrate the web app solution to the core business problem.
+* **Installation:**
+    * `claude plugin marketplace add https://github.com/MiniMax-AI/skills` then `claude plugin install minimax-skills`
 
 ---
 
