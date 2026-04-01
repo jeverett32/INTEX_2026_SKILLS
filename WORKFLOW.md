@@ -1,4 +1,4 @@
-## **=INTEX Web App Workflow**
+## **INTEX Web App Workflow**
 
 ### **1. Core Methodology: CRISP-DM & Research**
 * **Skill:** `/crisp-dm-pipeline` + `/researcher`
